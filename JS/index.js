@@ -5,8 +5,10 @@ const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 60) {
     header.style.top = "0px";
+    fleche.style.visibility = "hidden";
   } else {
     header.style.top = "-60px";
+    fleche.style.visibility = "visible";
   }
 });
 //=================================
@@ -37,19 +39,7 @@ setInterval(animTexte, speed);
 //Animation fleche
 const fleche = document.getElementById("fleche")
 let flechePos = 75;
-let dir = 1;
 function animationFleche() {
-    /*if (flechePos >= 80) {
-        dir = -1;
-    } else if (flechePos <= 75) {
-        dir = 1;
-    }
-    if (dir == 1) {
-        
-    } else {
-        flechePos -=0.2;
-        fleche.style.top = flechePos+"%";
-    }*/
     if (flechePos >= 80) {
         fleche.style.top =  "75%";
         flechePos = 65

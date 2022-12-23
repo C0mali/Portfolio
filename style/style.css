@@ -46,8 +46,8 @@ main {
     height: 20px;
     width: 20px;
     position: absolute;
-    border-bottom: 5px black solid;
-    border-left: 5px black solid;
+    border-bottom: 5px #B8CBD0 solid;
+    border-left: 5px #B8CBD0 solid;
     top: 65%;
     left: 50%;
     transform:rotateZ(315deg);
