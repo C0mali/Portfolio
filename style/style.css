@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #137C8B;
+  background-color: #30808d;
   border-bottom: #709ca7 2px solid;
   border-top: #709ca7 2px solid;
   padding-top: 16px;
@@ -17,7 +17,7 @@ header {
   transition: 0.5s;
   z-index: 2;
 }
-header nav ul {
+header nav  {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -25,16 +25,20 @@ header nav ul {
   margin-bottom: 15px;
   padding: 0px;
 }
-header nav ul li {
-  list-style-type: none;
-}
+
 .linkHead {
   text-decoration: none;
   color: #0f384b;
   font-size: 25px;
   white-space: nowrap ;
 }
-.sepLine {
+.linkHead:hover {
+  color: black;
+}
+.linkHead:hover + .sepLineHead{
+  border-left: black 2px solid;
+}
+.sepLineHead {
   border-left: #709ca7 2px solid;
   height: 30px;
 }
@@ -88,11 +92,11 @@ main {
   margin-bottom: 20vh;
 }
 footer {
-  background-color: #137C8B;
+  background-color: #30808d;
   border-bottom: #709ca7 2px solid;
   border-top: #709ca7 2px solid;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-evenly;
   margin: 0px;
   padding: 16px;
@@ -104,12 +108,22 @@ footer section {
 footer h6 {
   margin: 0px;
 }
-footer section ul {
+footer section {
   display: flex;
   flex-direction: column;
   padding: 0px;
   margin: 0px;
 }
-footer section ul li {
-  list-style-type: none;
+.linkFoot {
+  text-decoration: none;
+  color: #0f384b;
+  font-size: 15px;
+  white-space: nowrap ;
+}
+.linkFoot:hover {
+  color: black;
+}
+.sepLineFoot {
+  border-left: #709ca7 2px solid;
+  height: 80px;
 }
