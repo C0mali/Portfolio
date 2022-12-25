@@ -1,20 +1,23 @@
 const header = document.querySelector("header");
 
+
+
 //================================
 //scroll event
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 60) {
+  if (window.scrollY >= 60) {
     header.style.top = "0px";
     fleche.style.visibility = "hidden";
   } else {
-    header.style.top = "-60px";
+    header.style.top = "-93px";
+    
     fleche.style.visibility = "visible";
   }
 });
 //=================================
 //Animation texte
 const finPhrase = document.querySelector("#finPhrase");
-const textes = ["un étudiant", "curieux", "un grimpeur", "un développeur"];
+const textes = ["un étudiant.  ", "curieux.  ", "un grimpeur.  ", "un développeur.  "];
 let posTexte = 0;
 let texte = 0;
 let speed = 200;
