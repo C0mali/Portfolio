@@ -1,3 +1,22 @@
-main {
-    height: 150vh;
+#title, #escalade, #infoTechs, #espace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 2vw;
+}
+h1, h2 {
+    color: #b8cbd0;
+}
+p {
+    color: #709ca7;
+}
+#titreEscalade{
+    height: auto;
+    width: auto;
+}
+#e {
+    position: relative;
+    top: -100px;
 }

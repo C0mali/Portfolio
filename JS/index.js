@@ -29,21 +29,19 @@ function animTexte(){
         }
     }
 }
-
 setInterval(animTexte, speed);
 //===================================
 //Animation fleche
-const fleche = document.getElementById("fleche")
-let flechePos = 75;
+const fleche = document.getElementById("fleche");
+let flechePos = 0;
 function animationFleche() {
-    if (flechePos >= 80) {
-        fleche.style.top =  "75%";
-        flechePos = 65
+    if (flechePos >= 150) {
+        fleche.style.top = "0px";
+        flechePos = 0;
     } else {
-        flechePos +=0.1;
-        fleche.style.top = flechePos+"%";  
+        flechePos += 1;
+        fleche.style.top = flechePos+"px";
     }
-    
-    requestAnimationFrame(animationFleche)
+    requestAnimationFrame(animationFleche);
 }
-requestAnimationFrame(animationFleche)
+animationFleche();
