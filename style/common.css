@@ -5,6 +5,8 @@ body {
   padding: 0px;
 }
 
+/*Header*/
+
 header {
   background-color: #30808d;
   border-bottom: #709ca7 2px solid;
@@ -17,7 +19,7 @@ header {
   transition: 0.5s;
   z-index: 2;
 }
-header nav  {
+header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -30,67 +32,28 @@ header nav  {
   text-decoration: none;
   color: #0f384b;
   font-size: 25px;
-  white-space: nowrap ;
+  white-space: nowrap;
 }
 .linkHead:hover {
   color: black;
 }
-.linkHead:hover + .sepLineHead{
+.linkHead:hover + .sepLineHead {
   border-left: black 2px solid;
+  height: 30px;
 }
 .sepLineHead {
   border-left: #709ca7 2px solid;
   height: 30px;
 }
+.currentA {
+    color: black;
+}
+.currentDiv {
+    border-left: black 2px solid;
+}
 
-main {
-  color: #709ca7;
-  height: 150vh;
-}
-.title {
-  position: relative;
-  height:100vh;
-  margin-left: 10px;
+/*Footer*/
 
-}
-.title h1 {
-  font-size: 10vw;
-}
-.adj h1 {
-  font-size: 5vw;
-}
-#finPhrase {
-  color: #b8cbd0;
-}
-#fleche {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  border-bottom: 5px #b8cbd0 solid;
-  border-left: 5px #b8cbd0 solid;
-  top: 65%;
-  left: 50%;
-  transform: rotateZ(315deg);
-  transition: 0.2s;
-}
-.sepSec {
-  width: 100%;
-  height: 2px;
-  display: flex;
-  justify-content: center;
-}
-.sepSecLine {
-  width: 75%;
-  border-bottom: #709ca7 2px solid;
-}
-.bienvenue, .parcours {
-  text-align: center;
-  font-size: 2vw;
-}
-.desc {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
-}
 footer {
   background-color: #30808d;
   border-bottom: #709ca7 2px solid;
@@ -118,7 +81,7 @@ footer section {
   text-decoration: none;
   color: #0f384b;
   font-size: 15px;
-  white-space: nowrap ;
+  white-space: nowrap;
 }
 .linkFoot:hover {
   color: black;
