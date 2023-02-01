@@ -19,15 +19,15 @@ header {
   transition: 0.5s;
   z-index: 2;
 }
-header nav {
+nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 0px;
 }
-
 .linkHead {
   text-decoration: none;
   color: #0f384b;
@@ -37,19 +37,52 @@ header nav {
 .linkHead:hover {
   color: black;
 }
-.linkHead:hover + .sepLineHead {
-  border-left: black 2px solid;
-  height: 30px;
+.linkDrop {
+  text-decoration: none;
+  color: #0f384b;
+  font-size: 25px;
+  white-space: nowrap;
+  padding: 10px;
+}
+.linkDrop:hover {
+  color: black;
+}
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop p {
+  text-decoration: none;
+  color: #0f384b;
+  font-size: 25px;
+  white-space: nowrap;
+  margin: 0;
+}
+.drop:hover p {
+  color: black;
+}
+.dropContent {
+  display: none;
+  padding: 10px;
+  width: auto;
+  background-color: #30808d;
+  border: #709ca7 2px solid;
+  box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.drop:hover .dropContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
 }
 .sepLineHead {
   border-left: #709ca7 2px solid;
   height: 30px;
 }
-.currentA {
-    color: black;
-}
-.currentDiv {
-    border-left: black 2px solid;
+.sepLineDrop {
+  border-bottom: #709ca7 2px solid;
+  width: 75%;
 }
 
 /*Footer*/

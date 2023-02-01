@@ -1,7 +1,8 @@
 main {
   color: #709ca7;
 }
-#desc, #title {
+#desc,
+#title {
   height: 100vh;
 }
 #desc {
@@ -27,15 +28,33 @@ main {
   height: auto;
   width: auto;
 }
+@keyframes fleche_animation {
+  0% {
+    transform: translateY(-55px) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(-55px) rotate(-45deg);
+  }
+}
 #fleche {
-  height: 20px;
-  width: 20px;
   position: relative;
-  border-bottom: 5px #b8cbd0 solid;
-  border-left: 5px #b8cbd0 solid;
-  transform: rotateZ(315deg);
+
+  width: 20px;
+  height: 20px;
+
+  border-bottom: 5px solid #b8cbd0;
+  border-left: 5px solid #b8cbd0;
+
   left: 50%;
-  transition: 0.2s;
+
+  animation-name: fleche_animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+  transition: 0.25s;
 }
 .sepSec {
   width: 100%;
@@ -47,8 +66,7 @@ main {
   width: 75%;
   border-bottom: #709ca7 2px solid;
 }
-#desc p  {
+#desc p {
   text-align: center;
   font-size: 2vw;
 }
-

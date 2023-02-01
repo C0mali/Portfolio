@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/common.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/common.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>            
-            <div class="sepLineHead currentDiv"></div>
-            <a class="linkHead currentA" href="">Accueil</a>
-            <div class="sepLineHead currentDiv"></div>
-            <a class="linkHead" href="./mes-passions.html">Mes passions</a>
-            <div class="sepLineHead"></div>
-            <a class="linkHead" href="">Mon parcours</a>
-            <div class="sepLineHead"></div>
-            <a class="linkHead" href="">Mes Projets</a>
-            <div class="sepLineHead"></div>
-        </nav>
+      <nav>
+        <div class="sepLineHead"></div>
+        <a class="linkHead" href="">Accueil</a>
+        <div class="sepLineHead"></div>
+        <div class="drop">
+            <p>Qui suis-je?</p>
+            <div class="dropContent">
+                <a class="linkDrop" href="./mes-passions.html">Mes passions</a>
+                <div class="sepLineDrop"></div>
+                <a class="linkDrop" href="">Ma personnalité</a>
+            </div>
+        </div>
+        <div class="sepLineHead"></div>
+        <a class="linkHead" href="">Mon parcours</a>
+        <div class="sepLineHead"></div>
+        <div class="drop">
+            <p>Mes projets</p>
+            <div class="dropContent">
+                <a class="linkDrop" href="">Mes projets universitaires</a>
+                <div class="sepLineDrop"></div>
+                <a class="linkDrop" href="">Mes projets personnels</a>
+            </div>
+        </div>
+        <div class="sepLineHead"></div>
+      </nav>
     </header>
     <main>
-        <section id="title">
-            <h1>Mathéo Tardy</h1>
-            <h2>Je suis <span id="finPhrase"></span></h2>
-            <div class="container"><div id="fleche"></div></div>
-        </section>
-        <div class="sepSec"><div class="sepSecLine"></div></div>
-        <div id="desc">
-            <p>Bienvenue sur mon portfolio fait main</p>
-            <p>N'hésite pas à parcourir les différentes pages pour me découvrir et me connaître</p>
-        </div>
+      <section id="title">
+        <h1>Mathéo Tardy</h1>
+        <h2>Je suis <span id="finPhrase"></span></h2>
+        <div class="container"><div id="fleche"></div></div>
+      </section>
+      <div class="sepSec"><div class="sepSecLine"></div></div>
+      <div id="desc">
+        <p>Bienvenue sur mon portfolio fait main</p>
+        <p>
+          N'hésitez pas à parcourir les différentes pages pour me découvrir, me
+          connaître et voir les différents projets que j'ai réalisés
+        </p>
+      </div>
     </main>
     <footer>
-        <section>
-            <h6>Plan du site</h6>
-            <a class="linkFoot" href="">Accueil</a>
-            <a class="linkFoot" href="./mes-passions.html">Mes passions</a>
-            <a class="linkFoot" href="">Mon parcours</a>
-            <a class="linkFoot" href="">Mes projets</a>
-        </section>
-        <div class="sepLineFoot"></div>
-        <section>
-            <h6>Mes réseaux</h6>
-            <a class="linkFoot" href="">Instagram</a>
-            <a class="linkFoot" href="">GitHub</a>
-        </section>
-        <div class="sepLineFoot"></div>
-        <section>
-            <h6>Contact</h6>
-            <a class="linkFoot" href="mailto:matheo.tardy@etu.univ-grenoble-alpes.fr">Contactez-moi !</a>
-        </section>
+      <section>
+        <h6>Plan du site</h6>
+        <a class="linkFoot" href="">Accueil</a>
+        <a class="linkFoot" href="./mes-passions.html">Mes passions</a>
+        <a class="linkFoot" href="">Mon parcours</a>
+        <a class="linkFoot" href="">Mes projets</a>
+      </section>
+      <div class="sepLineFoot"></div>
+      <section>
+        <h6>Mes réseaux</h6>
+        <a class="linkFoot" href="">Instagram</a>
+        <a class="linkFoot" href="">GitHub</a>
+      </section>
+      <div class="sepLineFoot"></div>
+      <section>
+        <h6>Contact</h6>
+        <a
+          class="linkFoot"
+          href="mailto:matheo.tardy@etu.univ-grenoble-alpes.fr"
+          >Contactez-moi !</a
+        >
+      </section>
     </footer>
     <script src="./JS/index.js"></script>
     <script src="./JS/common.js"></script>
-</body>
+  </body>
 </html>

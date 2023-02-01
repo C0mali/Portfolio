@@ -30,18 +30,3 @@ function animTexte(){
     }
 }
 setInterval(animTexte, speed);
-//===================================
-//Animation fleche
-const fleche = document.getElementById("fleche");
-let flechePos = 0;
-function animationFleche() {
-    if (flechePos >= 150) {
-        fleche.style.top = "0px";
-        flechePos = 0;
-    } else {
-        flechePos += 1;
-        fleche.style.top = flechePos+"px";
-    }
-    requestAnimationFrame(animationFleche);
-}
-animationFleche();
