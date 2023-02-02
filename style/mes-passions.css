@@ -2,13 +2,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 1000px;
     text-align: center;
-    font-size: 2vw;
 }
 h1, h2 {
     color: #b8cbd0;
 }
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 50px;
+}
 p {
     color: #709ca7;
+    font-size: 35px;
+    margin: 10px;
 }

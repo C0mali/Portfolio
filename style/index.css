@@ -1,5 +1,8 @@
 main {
   color: #709ca7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 #desc,
 #title {
@@ -15,10 +18,12 @@ main {
   margin-left: 10px;
 }
 #title h1 {
-  font-size: 10vw;
+  /* font-size: 10vw; */
+  font-size: 200px;
 }
 #title h2 {
-  font-size: 5vw;
+  /* font-size: 5vw; */
+  font-size: 100px;
 }
 #finPhrase {
   color: #b8cbd0;
@@ -68,5 +73,5 @@ main {
 }
 #desc p {
   text-align: center;
-  font-size: 2vw;
+  font-size: 50px;
 }
