@@ -1,0 +1,37 @@
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #b8cbd0;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+     font-size: 40px;
+}
+p {
+    color: #709ca7;
+    font-size: 35px;
+}
+
+.projets {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+.projets div {
+    background-color: #30808d;
+    border: #b8cbd0 2px solid;
+    margin: 10px;
+    border-radius: 20px;
+}
+
