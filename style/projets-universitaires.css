@@ -28,10 +28,29 @@ p {
     flex-wrap: wrap;
     text-align: center; 
 }
-.projets div {
+.proj {
+    max-width: 700px;
     background-color: #30808d;
     border: #b8cbd0 2px solid;
-    margin: 10px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 20px;
-}
 
+    /* transition: 0.25s; */
+}
+.proj[center="false"] {
+    max-width: 700px;
+}
+.proj[center="true"] {
+    max-width: 1400px;
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: #709ca7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+  }
