@@ -21,31 +21,50 @@ p {
     color: #709ca7;
     font-size: 35px;
 }
+.projets p {
+    color: #0f384b;
+}
+.hidden p {
+    white-space: nowrap;
+    margin: 10px;
+}
 
 .projets {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     text-align: center; 
 }
 .proj {
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 700px;
     background-color: #30808d;
     border: #b8cbd0 2px solid;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-
-    /* transition: 0.25s; */
-}
-.proj[center="false"] {
-    max-width: 700px;
 }
 .proj[center="true"] {
-    max-width: 1400px;
+    min-width: fit-content;
 }
 .hidden {
     display: none;
+    margin-bottom: 10px;
+}
+.carac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.ligne {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
 }
 button {
     background-color: #709ca7;
@@ -54,3 +73,8 @@ button {
     padding: 15px 32px;
     font-size: 16px;
   }
+.sep {
+    height: 2px;
+    width: 75%;
+    border-bottom: #b8cbd0 2px solid;
+}

@@ -38,7 +38,9 @@ function cacherDesc(desc) {
     desc.style.display = "none";
 }
 function afficherHidden(hidden) {
-    hidden.style.display = "block";
+    hidden.style.display = "flex";
+    hidden.style.flexDirection = "column";
+    hidden.style.alignItems = "center";
 }
 
 function cacherProj(proj, button, visib) {
