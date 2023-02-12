@@ -1,7 +1,6 @@
 const seeMores = document.querySelectorAll(".seeMore");
 const projs = document.querySelectorAll(".proj");
-console.log(document);
-
+const body = document.querySelector("body");
 seeMores.forEach((currentValue, currentIndex) => {
     currentValue.addEventListener("click", () => {
         // console.log(currentValue);
@@ -11,8 +10,10 @@ seeMores.forEach((currentValue, currentIndex) => {
         let visib = currentValue.getAttribute("visib");
         if(visib === "hidden") {
             afficherProj(proj, currentValue, visib);
+            body.style.overflow = "hidden";
         } else {
             cacherProj(proj, currentValue, visib);
+            body.style.overflow = "auto";
         }
         
     });

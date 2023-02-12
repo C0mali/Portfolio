@@ -24,11 +24,14 @@ p {
 .projets p {
     color: #0f384b;
 }
-.hidden p {
+.carac p {
     white-space: nowrap;
     margin: 10px;
 }
-
+.scrollable{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .projets {
     display: flex;
     justify-content: space-around;
@@ -41,6 +44,7 @@ p {
     align-items: center;
     justify-content: space-around;
 
+    
     width: 700px;
     background-color: #30808d;
     border: #b8cbd0 2px solid;
@@ -50,6 +54,8 @@ p {
 }
 .proj[center="true"] {
     min-width: fit-content;
+    max-height: 800px;
+    z-index: 3;
 }
 .hidden {
     display: none;

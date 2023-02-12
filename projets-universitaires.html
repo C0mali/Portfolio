@@ -55,8 +55,9 @@
                     </div>
                     <div id="proj2" class="proj">
                         <h3>Comparaison d'approches algorithmiques</h3>
-                        <p class="desc">Projet orienté autours de l'algorithmie et l'optimisation de programme en java</p>
-                        <div class="hidden">
+                        <p class="desc">Projet orienté autours de l'algorithmie et l'optimisation de programme en java
+                        </p>
+                        <div class="hidden scrollable">
                             <div class="carac">
                                 <div class="ligne">
                                     <p>Durée : 1 semaine</p>
@@ -68,6 +69,33 @@
                                 </div>
                             </div>
                             <div class="sep"></div>
+                            <p>
+                                Le but de ce projet était de créer un programme capable de deviner le sujet d'une
+                                dépêche de presse ayant pour thème un des 5 suivants : Environnement-Science, Culture,
+                                Politique, Économique et Sport. Grâce à des lexiques associant un mot à un poids
+                                (compris entre 1 et 3). Ce poids a d’abord été choisi par nous-même de manière
+                                arbitraire selon son importance dans le thème. </p>
+                            <p>
+                                Exemple : le mot coupe aura un poids de 3 pour le thème Sport.
+                            </p>
+                            <p>
+                                De plus, nous n’avons pas associé un poids à peu de mots entre 20
+                                et 30, ce qui influe grandement sur la qualité de la détection.
+                            </p>
+                            <p>
+                                Par la suite, nous avons
+                                automatisé la création des lexiques. Le programme a donc d’abord associé un score à
+                                chaque mot correspondant en fait à la fréquence d’apparition du mot dans les dépêches
+                                d’une catégorie moins le nombre de fois où il apparaît dans les autres catégories. Si le
+                                score était trop bas, le mot n’apparaissait pas dans le lexique. Puis le programme
+                                transformait ce score en poids. Grâce à cette génération automatique, le taux de bonne
+                                détection était plus important.
+                            </p>
+                            <p>
+                                La deuxième partie de ce projet était d’optimiser le programme. Nous avons donc optimisé
+                                le nombre de comparaisons en triant nos listes et nous avons utilisé le multi-treading
+                                pour réduire le temps de création des lexiques.
+                            </p>
                         </div>
                         <button class="seeMore" visib="hidden">Voir plus</button>
                     </div>
